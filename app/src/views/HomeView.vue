@@ -32,10 +32,13 @@ watch(
   }
 )
 // we can watch a lot of different things in an array
+// and we will also specify immeadiate so that it runs initially too (before any changes)
 watch([count, () => reactiveThing.count, () => store.count], (newVals, oldVals) => {
-  let sum = newVals[0] + newVals[1] + newVals[2]
-  watchTotalsText.value = `sum is: ${sum}`
-})
+    let sum = newVals[0] + newVals[1] + newVals[2]
+    watchTotalsText.value = `sum is: ${sum}`
+  }, 
+  { immediate: true }
+);
 </script>
 
 <template>
