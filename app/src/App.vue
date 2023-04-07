@@ -12,6 +12,7 @@ import FooterBar from './components/FooterBar.vue'
         <nav>
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/basic">Basic</RouterLink>
+          <RouterLink to="/components">Components</RouterLink>
           <RouterLink to="/todo">To Do</RouterLink>
           <RouterLink to="/about">About</RouterLink>
         </nav>
