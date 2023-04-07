@@ -1,1 +1,0 @@
-import{_ as t,o,c as s,a as e}from"./index-4fad9035.js";const a={},n=e("h1",null,"About Page",-1),c=e("p",null," This is a simple web-app where I try all the features of Vue3 (Typescript) using the Composition API approach to development. ",-1),r=[n,c];function i(_,l){return o(),s("main",null,r)}const u=t(a,[["render",i]]);export{u as default};

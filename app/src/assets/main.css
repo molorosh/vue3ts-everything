@@ -8,6 +8,22 @@
   font-weight: normal;
 }
 
+footer {
+  border-top: 1px darkgreen dashed;
+  background-color: transparent;
+  background-image:
+    linear-gradient(
+      to bottom, 
+      #00800040 2%, 
+      #00808040 5%, 
+      transparent 20%
+    );
+}
+
+.footerbar {
+  padding: 0rem 1rem;
+}
+
 a,
 .green {
   text-decoration: none;

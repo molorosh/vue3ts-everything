@@ -11,6 +11,8 @@ import FooterBar from './components/FooterBar.vue'
       <div class="wrapper">
         <nav>
           <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/basic">Basic</RouterLink>
+          <RouterLink to="/todo">To Do</RouterLink>
           <RouterLink to="/about">About</RouterLink>
         </nav>
       </div>
@@ -21,7 +23,7 @@ import FooterBar from './components/FooterBar.vue'
     </div>
 
     <footer>
-      <FooterBar msg="TBD: corporate message goes here..." />
+      <FooterBar msg="&copy; 2023 Molorosh Intergalatic Design Inc." />
     </footer>
   </div>
 </template>
