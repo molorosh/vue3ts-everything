@@ -9,6 +9,7 @@
 }
 
 footer {
+  margin-top: 0.5rem;
   border-top: 1px darkgreen dashed;
   background-color: transparent;
   background-image:
@@ -21,7 +22,64 @@ footer {
 }
 
 .footerbar {
-  padding: 0rem 1rem;
+  padding: 0.5rem 1rem 0rem 1rem;
+}
+
+.when {
+  font-family: monospace;
+  font-weight: normal;
+}
+
+.loading {
+  color: var(--todo-loading-color);
+}
+ul.loading {
+  list-style-type: none;
+}
+ul.loading li::before {
+  content: "⚠";
+  display: inline-block;
+  position: relative;
+}
+ul.loading li {
+  margin-left: -1.2rem;
+}
+ul.loading li {
+  font-weight: bold;
+}
+ul.loading li .when {
+  display: none;
+}
+
+.recent {
+  color: var(--todo-recent-color);
+}
+ul.recent {
+  list-style-type: circle;
+}
+ul.recent li {
+  font-weight: bold;
+}
+
+.planned {
+  color: var(--todo-planned-color);
+}
+ul.planned {
+  list-style-type: square;
+}
+ul.planned li {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.done {
+  color: var(--todo-done-color);
+}
+ul.done {
+  list-style-type: disc;
+}
+ul.done li {
+  font-weight: bold;
 }
 
 a,

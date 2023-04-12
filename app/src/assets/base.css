@@ -18,6 +18,11 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --todo-loading-color: rgb(145, 35, 35);
+  --todo-recent-color: rgba(44, 112, 91, 1);
+  --todo-planned-color: rgba(101, 44, 112, 1);
+  --todo-done-color: rgba(92, 92, 92, 1);
 }
 
 /* semantic color variables for this project */
@@ -34,6 +39,8 @@
 
   --section-gap: 160px;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
