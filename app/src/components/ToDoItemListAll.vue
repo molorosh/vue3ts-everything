@@ -24,11 +24,12 @@ const allTodos = ref(await db.todos.toArray());
           <div class="todoGridItem" :class="{ todoGridItemEven: index%2==0, todoGridItemOdd: index%2==1 }" style="grid-column: 2;">{{ item.title }}</div>
           <div class="todoGridItem" :class="{ todoGridItemEven: index%2==0, todoGridItemOdd: index%2==1 }" style="grid-column: 3;">{{ item.created }}</div>
           <div class="todoGridItem" :class="{ todoGridItemEven: index%2==0, todoGridItemOdd: index%2==1 }" style="grid-column: 4;">{{ item.notes }}</div>
-          <div class="todoGridItem" :class="{ todoGridItemEven: index%2==0, todoGridItemOdd: index%2==1 }" style="grid-column: 5;">{{ item.state }}</div>
+          <div class="todoGridItem" :class="{ todoGridItemEven: index%2==0, todoGridItemOdd: index%2==1 }" style="grid-column: 5;"><status :val=item.state></status></div>
           <div class="todoGridItem" :class="{ todoGridItemEven: index%2==0, todoGridItemOdd: index%2==1 }" style="grid-column: 6;">{{ item.updated }}</div>
         </template>  
-
     </div>
+
+    
 
   </div>
 </template>
@@ -36,7 +37,7 @@ const allTodos = ref(await db.todos.toArray());
 <style scoped>
 .todoGrid {
   display: grid;
-  grid-template-columns: [id] 40px [title] auto [created] 300px [notes] 100px [state] 60px [updated] 300px;
+  grid-template-columns: [id] 40px [title] auto [created] 300px [notes] 100px [state] 100px [updated] 300px;
   grid-auto-flow: row;
 }
 .todoGridHeader{

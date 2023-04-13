@@ -8,6 +8,7 @@
     <h2 class="loading">Under construction</h2>
     <ul class="loading">
       <li><span class="when">2023-04</span> Dexie local peristance</li>
+      <li><span class="when">2023-04</span> Plugins</li>
     </ul>
     <h2 class="recent">Recently Implemented</h2>
     <ul class="recent">
@@ -19,9 +20,9 @@
     <ul class="planned">
       <li>Templateless rendering</li>
       <li>Lifecycle hooks</li>
+      <li>Pinia stores</li>
       <li>Component Unit Tests</li>
       <li>Localisation</li>
-      <li>Plugins</li>
     </ul>
     <h2 class="done">Done</h2>
     <ul class="done">
