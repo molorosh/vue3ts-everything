@@ -8,7 +8,7 @@
     <h2 class="loading">Under construction</h2>
     <ul class="loading">
       <li><span class="when">2023-04</span> Dexie local peristance</li>
-
+      <li><span class="when">2023-04</span> Events and emit</li>
     </ul>
     <h2 class="recent">Recently Implemented</h2>
     <ul class="recent">

@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { db, ToDoState, type ToDoItem } from '@/localDb/todoDb';
 import { ref } from 'vue'
-defineProps<{
+const props = defineProps<{
   title: string
-}>()
+}>();
+const emit = defineEmits(['data-update'])
 const taskTitle = ref("");
 const taskNotes = ref("");
 const taskDate = ref(new Date());
@@ -26,6 +27,7 @@ const addTask = async () =>{
     };
     const id = await db.todos.add(todo);
     taskMessage.value =  `added todo : ${id}`;
+    emit("data-update");
   } catch (error) {
     taskError.value = `Failed to add: ${error}`;
   }
